@@ -203,11 +203,11 @@ function renderTable(rates) {
         .map((country) => country.label);
 
     if (missingRateCountries.length > 0) {
-        statusElement.textContent = `Prix finaux en euros calcules avec les taux de la ligne 2. Taux manquant pour : ${missingRateCountries.join(", ")}.`;
+        statusElement.textContent = `Prix finaux en euros calculés avec les taux de change. Taux manquant pour : ${missingRateCountries.join(", ")}.`;
         return;
     }
 
-    statusElement.textContent = "Prix finaux en euros calcules a partir des prix locaux et des taux de change.";
+    statusElement.textContent = "Prix finaux en euros calculés à partir des prix locaux et des taux de change.";
 }
 
 async function loadSheetRates() {
@@ -227,12 +227,12 @@ async function loadSheetRates() {
         const rates = extractRates(rows);
         renderTable(rates);
     } catch (error) {
-        statusElement.textContent = "Impossible de charger la sheet. Les taux de change n'ont pas pu etre recuperes.";
+        statusElement.textContent = "Impossible de charger la sheet. Les taux de change n'ont pas pu etre récuperés.";
         tableHead.innerHTML = "";
         tableBody.innerHTML = `
             <tr>
                 <td colspan="${COUNTRY_CONFIG.length + 1}">
-                    Le tableau n'a pas pu etre calcule car la ligne 2 de la Google Sheet est inaccessible.
+                    Le tableau n'a pas pu etre calculé car la ligne 2 de la Google Sheet est inaccessible.
                 </td>
             </tr>
         `;
