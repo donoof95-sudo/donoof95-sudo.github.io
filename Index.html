@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prix par pays</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="bg-grid"></div>
+
+    <main class="page">
+        <div class="site-signature" aria-label="Pseudo du site">BERLIOZE YT</div>
+
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Ne gaspille plus ton argent</p>
+                <h1>Tableau des prix par pays</h1>
+                <p class="intro">
+                    Le tableau ci-dessous reprend les prix stores détectés pour chaque pays et calcule
+                    uniquement le montant final debite en euros à partir des taux de change.
+                </p>
+                <p class="method">
+                    Pour utiliser cette methode, rends-toi sur
+                    <a class="inline-link" href="https://store.farlightgames.com/cod" target="_blank" rel="noreferrer">PlutoMall</a>,
+                    active un VPN comme
+                    l'extension Urban VPN Proxy, connecte-toi depuis le pays qui affiche le montant
+                    le plus interessant dans le tableau ci dessous pour l'item que tu souhaites acheter, puis finalise ton paiement via PayPal.
+                </p>
+            </div>
+
+            <a
+                class="hero-badge donate-badge"
+                href="https://paypal.me/BerliozeYT?country.x=FR&locale.x=fr_FR"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Faire un don via PayPal"
+            >
+                <div class="badge-core"></div>
+                <div class="badge-ring"></div>
+                <div class="badge-label">Donate</div>
+            </a>
+        </section>
+
+        <section class="table-card">
+            <div class="table-header">
+                <div>
+                    <h2>Prix final en euros par pays</h2>
+                    <p id="table-status" class="status" aria-live="polite">Chargement des prix locaux et des taux...</p>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table id="pricing-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
