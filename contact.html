@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - BERLIOZE YT</title>
     <link rel="stylesheet" href="style.css">
-    <script src="contact.js" defer></script>
 </head>
 <body>
     <div class="bg-orb orb-one"></div>
@@ -32,7 +31,12 @@
                 </p>
             </div>
 
-            <form class="contact-form" id="contact-form" action="#" method="post">
+            <form
+                class="contact-form"
+                id="contact-form"
+                action="https://formspree.io/f/meerlbvv"
+                method="post"
+            >
                 <label class="form-field">
                     <span>Nom</span>
                     <input type="text" name="name" placeholder="Ton nom" required>
@@ -42,6 +46,9 @@
                     <span>Email</span>
                     <input type="email" name="email" placeholder="ton@email.com" required>
                 </label>
+
+                <input type="hidden" name="_subject" value="Nouveau message depuis le site BERLIOZE YT">
+                <input type="hidden" name="_replyto" value="berliozesponsors@gmail.com">
 
                 <label class="form-field">
                     <span>Sujet</span>
@@ -66,7 +73,7 @@
                 </div>
 
                 <p class="contact-disclaimer">
-                    Le bouton ouvre un email pre-rempli vers berliozesponsors@gmail.com avec les informations du formulaire.
+                    Le formulaire envoie maintenant les messages via Formspree vers berliozesponsors@gmail.com.
                 </p>
             </form>
         </section>
