@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BERLIOZE YT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <div class="bg-orb orb-one"></div>
+    <div class="bg-orb orb-two"></div>
+    <div class="bg-grid"></div>
+
+    <main class="page">
+        <nav class="top-nav" aria-label="Navigation principale">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link nav-link-active" href="contact.html" aria-current="page">Contact</a>
+        </nav>
+
+        <div class="site-signature" aria-label="Pseudo du site">BERLIOZE YT</div>
+
+        <section class="contact-card">
+            <div class="contact-copy">
+                <p class="eyebrow">Une question ou une demande ?</p>
+                <h1>Page contact</h1>
+                <p class="intro">
+                    Utilise ce formulaire comme page de contact du site. Il est pret visuellement et peut etre
+                    raccorde ensuite a un vrai email ou a un service d'envoi si tu veux le rendre pleinement fonctionnel.
+                </p>
+                <p class="method">
+                    Astuce : si tu veux un formulaire qui envoie vraiment les messages, je peux ensuite te brancher
+                    une solution simple comme Formspree, EmailJS, ou un envoi par email selon ce que tu preferes.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contact-form" action="#" method="post">
+                <label class="form-field">
+                    <span>Nom</span>
+                    <input type="text" name="name" placeholder="Ton nom" required>
+                </label>
+
+                <label class="form-field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="ton@email.com" required>
+                </label>
+
+                <label class="form-field">
+                    <span>Sujet</span>
+                    <input type="text" name="subject" placeholder="Objet de ton message" required>
+                </label>
+
+                <label class="form-field">
+                    <span>Message</span>
+                    <textarea name="message" rows="6" placeholder="Ecris ton message ici" required></textarea>
+                </label>
+
+                <div class="contact-actions">
+                    <button class="contact-button" type="submit">Envoyer</button>
+                    <a
+                        class="contact-button contact-button-secondary"
+                        href="https://paypal.me/BerliozeYT?country.x=FR&locale.x=fr_FR"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Soutenir via PayPal
+                    </a>
+                </div>
+
+                <p class="contact-disclaimer">
+                    Le bouton ouvre un email pre-rempli vers berliozesponsors@gmail.com avec les informations du formulaire.
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
